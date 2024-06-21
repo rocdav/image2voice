@@ -5,3 +5,5 @@ gtts
 IPython
 gradio
 torch
+sacremoses
+huggingface_hub
