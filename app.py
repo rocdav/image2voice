@@ -53,11 +53,19 @@ def process_image(image):
     audio_file = text_to_speech_gtts(caption_pt)
     return caption_pt, audio_file
 
+# Caminhos para as imagens de exemplo (supondo que estejam no mesmo diretório que o script)
+example_image_paths = [
+    "example1.jpg",
+    "example2.jpg",
+    "example3.jpg"
+]
+
 # Interface Gradio
 iface = gr.Interface(
     fn=process_image,
     inputs=gr.Image(type="filepath"),
     outputs=[gr.Textbox(), gr.Audio(type="filepath")],
+    examples=example_image_paths,
     title="Image to Voice",
     description="Gera uma descrição em português e a converte em voz a partir de uma imagem."
 )
