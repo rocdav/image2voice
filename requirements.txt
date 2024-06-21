@@ -4,3 +4,4 @@ sentencepiece
 gtts
 IPython
 gradio
+torch
