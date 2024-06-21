@@ -2,9 +2,8 @@ import gradio as gr
 from transformers import AutoProcessor, AutoModelForCausalLM, MarianMTModel, MarianTokenizer
 from PIL import Image
 import torch
-import matplotlib.pyplot as plt
 from gtts import gTTS
-from IPython.display import Audio
+import os
 
 # Funções auxiliares
 def prepare_image(image_path):
@@ -35,8 +34,8 @@ def text_to_speech_gtts(text, lang='pt'):
     return "output.mp3"
 
 # Carregar os modelos
-processor = AutoProcessor.from_pretrained("microsoft/git-large-textcaps")
-model = AutoModelForCausalLM.from_pretrained("microsoft/git-large-textcaps")
+processor = AutoProcessor.from_pretrained("microsoft/git-base")
+model = AutoModelForCausalLM.from_pretrained("microsoft/git-base")
 translation_model_name = 'Helsinki-NLP/opus-mt-tc-big-en-pt'
 translation_tokenizer = MarianTokenizer.from_pretrained(translation_model_name)
 translation_model = MarianMTModel.from_pretrained(translation_model_name)
@@ -47,21 +46,21 @@ model.to(device)
 translation_model.to(device)
 
 # Função principal para processar a imagem e gerar a voz
-def image_to_voice(image):
-    image, pixel_values = prepare_image(image)
+def process_image(image):
+    _, pixel_values = prepare_image(image)
     caption_en = generate_caption(pixel_values)
     caption_pt = translate_to_portuguese(caption_en)
     audio_file = text_to_speech_gtts(caption_pt)
     return caption_pt, audio_file
 
 # Interface Gradio
-demo = gr.Interface(
-    fn=image_to_voice,
-    inputs=gr.inputs.Image(type="filepath"),
-    outputs=[gr.outputs.Textbox(), gr.outputs.Audio(type="file")],
+iface = gr.Interface(
+    fn=process_image,
+    inputs=gr.Image(type="filepath"),
+    outputs=[gr.Textbox(), gr.Audio(type="filepath")],
     title="Image to Voice",
     description="Gera uma descrição em português e a converte em voz a partir de uma imagem."
 )
 
 if __name__ == "__main__":
-    demo.launch()
+    iface.launch()
