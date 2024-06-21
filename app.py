@@ -55,9 +55,9 @@ def process_image(image):
 
 # Caminhos para as imagens de exemplo (supondo que estejam no mesmo diretório que o script)
 example_image_paths = [
-    "example1.jpg",
-    "example2.jpg",
-    "example3.jpg"
+    "example1.png",
+    "example2.png",
+    "example3.png"
 ]
 
 # Interface Gradio
