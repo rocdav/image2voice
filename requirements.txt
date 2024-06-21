@@ -6,4 +6,5 @@ IPython
 gradio
 torch
 sacremoses
+Pillow
 huggingface_hub
