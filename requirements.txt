@@ -1,0 +1,6 @@
+transformers
+datasets
+sentencepiece
+gtts
+IPython
+gradio
