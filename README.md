@@ -51,4 +51,5 @@ Execute o script principal:
 ```bash
 python main.py
 
-Feito com 💻 por Davi Machado da Rocha 
+Feito com 💻 por: Alexandre Eduardo de Souza Jesus, Davi Machado da Rocha, Eduardo Garcia de Gáspari Valdejão,
+Gustavo Silva de Oliveira e Thiago Shimada para a conclusão da disciplina de PLN no ICMC durante o 1º semstre de 2024.
