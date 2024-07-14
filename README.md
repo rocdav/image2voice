@@ -29,10 +29,10 @@ Este projeto utiliza recursos de IA generativa para gerar descrições de imagen
 - Descrição em Português: (Descrição gerada)
 - Arquivo de Áudio: [Saída 2](outputs/saida2.mp3)
 
-- ### Imagem de Exemplo 3
-![Exemplo 2](inputs/exemplo3.png)
+### Imagem de Exemplo 3
+![Exemplo 3](inputs/exemplo3.png)
 - Descrição em Português: (Descrição gerada)
-- Arquivo de Áudio: [Saída 2](outputs/saida3.mp3)
+- Arquivo de Áudio: [Saída 3](outputs/saida3.mp3)
 
 ## Insights e Possibilidades
 
@@ -46,10 +46,8 @@ Para executar este projeto localmente, siga os passos abaixo:
 2. Instale as dependências:
    ```bash
    pip install -r requirements.txt
-
 Execute o script principal:
-```bash
+bash
+Copiar código
 python main.py
-
-Feito com 💻 por: Alexandre Eduardo de Souza Jesus, Davi Machado da Rocha, Eduardo Garcia de Gáspari Valdejão,
-Gustavo Silva de Oliveira e Thiago Shimada para a conclusão da disciplina de PLN no ICMC durante o 1º semstre de 2024.
+Feito com 💻 por: Alexandre Eduardo de Souza Jesus, Davi Machado da Rocha, Eduardo Garcia de Gáspari Valdejão, Gustavo Silva de Oliveira e Thiago Shimada para a conclusão da disciplina de PLN no ICMC durante o 1º semestre de 2024.
