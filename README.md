@@ -1,7 +1,7 @@
 # Projeto: Imagem para Voz
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SEU_USUARIO/SEU_REPOSITORIO/blob/main/imagem_para_voz.ipynb)
-[![GitHub](https://img.shields.io/badge/view%20in%20github-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SEU_USUARIO/SEU_REPOSITORIO/blob/main/imagem_para_voz.ipynb)
+[![GitHub](https://img.shields.io/badge/view%20in%20github-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rocdav/image2voice/blob/main/git_traduzido.ipynb)
 
 Este projeto utiliza recursos de IA generativa para gerar descrições de imagens e convertê-las em voz.
 
