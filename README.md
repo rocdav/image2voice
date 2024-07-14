@@ -1,4 +1,8 @@
-# image2voice
+# Projeto: Imagem para Voz
+
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SEU_USUARIO/SEU_REPOSITORIO/blob/main/imagem_para_voz.ipynb)
+[![GitHub](https://img.shields.io/badge/view%20in%20github-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SEU_USUARIO/SEU_REPOSITORIO/blob/main/imagem_para_voz.ipynb)
+
 Este projeto utiliza recursos de IA generativa para gerar descrições de imagens e convertê-las em voz.
 
 ## Estrutura do Repositório
@@ -25,8 +29,8 @@ Este projeto utiliza recursos de IA generativa para gerar descrições de imagen
 - Descrição em Português: (Descrição gerada)
 - Arquivo de Áudio: [Saída 2](outputs/saida2.mp3)
 
-### Imagem de Exemplo 2
-![Exemplo 3](inputs/exemplo3.png)
+- ### Imagem de Exemplo 3
+![Exemplo 2](inputs/exemplo3.png)
 - Descrição em Português: (Descrição gerada)
 - Arquivo de Áudio: [Saída 2](outputs/saida3.mp3)
 
@@ -43,3 +47,7 @@ Para executar este projeto localmente, siga os passos abaixo:
    ```bash
    pip install -r requirements.txt
 
+Execute o script principal:
+$ python main.py
+
+Feito com 💻 por Davi Machado da Rocha 
