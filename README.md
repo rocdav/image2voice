@@ -47,6 +47,6 @@ Para executar este projeto localmente, siga os passos abaixo:
    ```bash
    pip install -r requirements.txt
 3. Execute o script principal:
-   '''bash
+   ```bash
    python main.py
 Feito com 💻 por: Alexandre Eduardo de Souza Jesus, Davi Machado da Rocha, Eduardo Garcia de Gáspari Valdejão, Gustavo Silva de Oliveira e Thiago Shimada para a conclusão da disciplina de PLN no ICMC durante o 1º semestre de 2024.
