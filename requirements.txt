@@ -1,0 +1,10 @@
+transformers
+datasets
+sentencepiece
+gtts
+IPython
+gradio
+torch
+sacremoses
+Pillow
+huggingface_hub
