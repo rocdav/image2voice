@@ -48,6 +48,7 @@ Para executar este projeto localmente, siga os passos abaixo:
    pip install -r requirements.txt
 
 Execute o script principal:
-$ python main.py
+```bash
+python main.py
 
 Feito com 💻 por Davi Machado da Rocha 
