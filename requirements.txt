@@ -3,7 +3,7 @@ datasets
 sentencepiece
 gtts
 IPython
-gradio
+gradio==4.44.1
 torch
 sacremoses
 Pillow
